@@ -1,0 +1,213 @@
+@import "../../scssFiles/main.scss";
+@import "./Paste2.scss";
+
+.paste {
+    margin: 40px 80px ;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.paste-container {
+    flex: 0.81;
+
+}
+
+
+.paste-title {
+ 
+    @include title();
+}
+
+
+.paste-title-item {
+     @include title-item();
+}
+
+
+::placeholder {
+    color: $primary-light-blue;
+    }
+
+
+
+.paste-copy {
+    @include copy();
+}
+
+
+.paste-icon-button {
+    padding: 7px 12px !important;
+}
+
+
+.paste-box-input {
+   @include box-input();
+}
+
+.paste-form {
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+
+.paste-form-title {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-bottom: 20px;
+
+    .MuiOutlinedInput-root {
+        
+        width: 240px !important;
+        margin-right: 60px !important;   
+        border-radius: 50px !important; 
+      }
+        .MuiInputLabel-root {
+          font-size: 14px !important;
+          color: $primary-blue !important;
+          padding-left: 10px !important;
+            } 
+            
+            .MuiSelect-root {
+                width: 100% !important;
+            }
+}
+
+
+.paste-form-button {
+    width: 540px !important;
+ }
+
+
+.styles_ReactSwipeButton__2WML2, .styles_rsbContainer__KXpXK, .styles_rsbcSlider__1yYxD,
+.styles_rsbcSliderText__3h08j, .styles_rsbcSliderCircle__3G0Zs, .styles_rsbcText__16wA0 {
+    height: 40px !important;
+    line-height: 40px  !important;
+
+}
+
+.styles_rsbcText__16wA0 {
+    color: $primary-blue !important;
+    background-color: $primary-light-blue !important;
+}
+
+
+
+
+
+.paste-add {
+    border: 1px solid black;
+    margin-left: 40px;
+    height: 413px;
+    flex: 0.19;
+    border-radius: 10px;
+    // position: sticky;
+    // top: 100px;
+    // right: 80px;
+}
+
+
+.test {
+  border: 1px solid black;
+}
+
+
+
+@media (max-width: 767px)  {  
+    .paste-box, .paste-add {
+        visibility: hidden;
+        display: none;
+    }
+    
+    .paste {
+        flex-direction: column;
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+     .paste-container {
+       flex: 1;
+       width: 100%;
+     }
+
+    .paste-form {
+        flex: 1;
+        margin-top: 20px;
+        padding-left: 0;
+        display: flex;
+        flex-flow: column wrap;   
+    }
+
+    .paste-val-form {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .paste-form-title {
+        
+        flex-flow: column;
+        width: 100%;
+        margin-bottom: 0px;
+    
+
+        .MuiOutlinedInput-root  {
+            width: 100% !important;
+        }
+    }
+
+    .paste-form-button {
+        width: 100% !important;
+    }
+
+    .paste-form-input {
+        width: 100% !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px ) {
+
+    .paste {
+    margin: 30px 50px ;
+      
+    .paste-container {
+        flex: 0.8;
+    }
+
+    .paste-add {
+        flex: 0.2;
+        margin-left: 30px;
+    }
+
+    .paste-icon-button {
+        padding: 5px 10px !important;
+    }
+
+    .paste-form-title {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        .MuiInputLabel-root {
+            font-size: small !important;
+            padding-left: 10px !important;
+        }
+
+        .MuiOutlinedInput-root {
+            margin-right: 30px !important;
+            width: 210px !important;
+            border-radius: 50px !important;
+        }
+    }
+
+    .paste-form {
+        width: 70%;
+        padding-left: 9px;
+    }
+    .paste-form-button {
+        width: 450px !important;
+    }
+   }   
+}

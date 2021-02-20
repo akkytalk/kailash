@@ -1,0 +1,190 @@
+@import "../../scssFiles/main.scss";
+
+
+// Login style start here
+
+.login-form {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+       max-width: 35%;
+       object-fit: contain;
+    }
+}
+
+.login-line {
+    padding: 2px;
+    width: 90%;
+    background-color: $primary-light-blue;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.login-data {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+
+    img {
+        max-width: 100%;
+       object-fit: contain;
+    }
+}
+
+
+.login-data-image {
+    flex: 0.5;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login-data-arrow-icon {
+    font-size: 50px !important;
+    cursor: pointer !important;
+ }
+
+@media (max-width: 767px) {
+    .login {
+
+        .login-form {
+            flex-flow: column;
+            justify-content: space-around;
+            align-items: center;
+        
+            img {
+                margin-top: 30px;
+                max-width: 70%;
+            }
+        }
+
+        .login-form-image2 {
+            display: none;
+        }
+
+        .MuiInputLabel-root {
+            font-size: small !important;
+            }
+
+            .login-data {
+                margin-top: 30px;
+                flex-flow: column;
+                img {
+                    display: none;
+                }
+            }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .login {
+        .login-form-image1 {
+            display: none;
+        }
+
+        .MuiInputLabel-root {
+            font-size: 14px !important;
+            }
+    }
+}
+
+
+@media (min-width: 1025px) {
+
+    .login {
+        .login-form-image1 {
+            display: none;
+        }
+    }
+}
+
+// Login style end here
+
+
+// Member form style start here
+
+
+.member-form {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.member-card {
+ max-width: 353px;
+ max-height: 558px;
+ padding: 30px 80px;
+ 
+}
+
+.member-form-elements {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+ h5 {
+   color: $primary-red;
+   margin-bottom: 20px !important;
+ }
+ 
+ }
+
+ .MuiFormControlLabel-label {
+   font-size: 10px !important; 
+   color: $primary-red;
+
+}
+
+
+.member-form-input {
+    width: 100% !important;
+    margin-bottom: 12px !important;
+}
+
+
+.member-form-button, .member-form-button2 {
+ background-color: $primary-red !important;
+ margin-bottom: 5px !important;
+ color: $primary-light-blue !important;
+ border: none !important;
+}
+
+.member-form-button2 {
+    background-color: $primary-blue !important;
+    border: none !important;
+    margin-top: 5px !important;
+   }
+
+@media (max-width: 768px) {
+
+    .member-form {
+       margin-top: 30px;
+       margin-bottom: 30px;
+
+        .member-card {
+            max-width: 80%;
+            max-height: 558px;
+            padding: 30px 20px;
+            margin: auto;
+            }
+    }
+    
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .member-form {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        
+        .member-card {
+            max-width: 300px;
+            padding: 30px 40px;
+            
+            }
+
+    }
+}
+
+// Member form style end here

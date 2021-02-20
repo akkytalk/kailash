@@ -1,0 +1,160 @@
+@import "../../scssFiles/main.scss";
+
+.paste-mobile {
+    visibility: hidden;
+
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .paste-mobile {
+        visibility: visible;
+        display: block;
+        width: 100%;
+        flex: 1;
+        // margin-left: 20px;
+        // margin-right: 20px;
+    }
+
+    .paste-mobile-add {
+       border: 1px solid black;
+       height: 70px;
+       margin-top: 20px;
+       border-radius: 5px;
+    }
+
+    .paste-mobile-icons {
+        margin-top: 20px;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+    .paste-mobile-size {
+        width: 20%;
+        height: 30px;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: $primary-light-blue;
+        color: $primary-blue;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .paste-mobile-box-input {
+
+    border-radius: 0px 0px 5px 5px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .paste-mobile-copy {
+        display: flex;
+        padding: 0;
+            height: 30px;
+            width: 65%;
+            font-size: 12px;
+             border-radius: 5px;
+            background-color: $primary-red; 
+    }
+
+    .paste-mobile-copy-span {
+        background-color: $primary-light-blue;
+                color: $primary-blue;
+                width: 100%;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px 0 0 5px;
+    }
+
+    .paste-mobile-icon-button {
+        padding: 15px !important;
+       
+    }
+
+    .paste-mobile-title {
+        display: flex;
+        flex-flow: column;
+        margin-top: 20px;
+        width: 100%;
+        flex: 1;
+    }
+
+
+    .paste-mobile-title-disabled {
+        flex: 1;
+        border: none;
+        background-color: $primary-blue;
+        color: $primary-light-blue;
+        
+        font-size: 12px;
+        line-height: 30px;
+        border-radius: 5px 5px 0 0;
+        text-align: center;
+    }
+
+    .paste-mobile-form {
+        display: flex;
+        flex-flow: column;
+        margin-top: 20px;
+
+        .MuiOutlinedInput-root {
+           border-radius: 50px !important;
+        }
+
+        .MuiInputLabel-root {
+            font-size: 14px !important;
+            color: $primary-blue !important;
+            padding-left: 10px !important;
+              } 
+    }
+
+    
+
+    .paste-mobile-form-input {
+        width: 100%;
+        margin-bottom: 12px !important;
+
+    }
+
+    .paste-mobile-form-button {
+        width: 100%;
+    }
+
+    .styles_ReactSwipeButton__2WML2, .styles_rsbContainer__KXpXK, .styles_rsbcSlider__1yYxD,
+.styles_rsbcSliderText__3h08j, .styles_rsbcSliderCircle__3G0Zs, .styles_rsbcText__16wA0 {
+    height: 40px !important;
+    line-height: 40px  !important;
+
+}
+
+.styles_rsbcText__16wA0 {
+    color: $primary-blue !important;
+    background-color: $primary-light-blue !important;
+}
+
+    .styles_rsbcText__16wA0, .styles_rsbcText__16wA0 {
+        font-size: 11px !important;
+        letter-spacing: 1px !important;
+        margin-left: 20px !important;
+        
+    }
+
+    .paste-mobile-line {
+        padding: 3px;
+        background-color: $primary-light-blue;
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+ }
+
+

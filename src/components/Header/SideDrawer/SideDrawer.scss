@@ -1,0 +1,105 @@
+@import "../../../scssFiles/main.scss";
+
+.side-drawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $primary-light-blue;
+    padding: 16px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.side-drawer-login {
+    display: flex;
+    align-items: center;
+    
+    span {
+        color: $primary-blue;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+        width: 100%;
+    }
+}
+
+.side-drawer-link {
+    text-decoration: none !important;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: $primary-red;
+        box-sizing: border-box;        
+    }
+}
+
+.side-drawer-nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    height: 25%;
+}
+
+.side-drawer-button {
+    width: 100%;
+    text-align: left !important;
+    color: $primary-blue !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+      padding: 10px;
+    &:hover {
+        background-color: $primary-red;
+        box-sizing: border-box;
+    }
+    a {
+        width: 100%;
+        text-decoration: none !important;
+        color: $primary-blue;
+    }
+}
+
+.side-drawer-logo {
+    color: $primary-blue;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+
+    h1 {
+        font-size: 27px !important;
+    }
+
+    p {
+        font-size: 10px !important;
+    }
+
+}
+
+.side-drawer-close {
+    color: $primary-red !important;
+    cursor: pointer;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(-100%);
+}
+
+@media (min-width: 768px) {
+    .side-drawer {
+        display: none;
+    }
+}
+
+
+

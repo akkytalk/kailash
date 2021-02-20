@@ -1,0 +1,130 @@
+@import "../../../scssFiles/main.scss";
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-items {
+    display: flex;
+    max-width: 491px;
+    max-height: 98px;
+    margin-bottom: 50px;
+    background-color: $primary-light-blue;
+    border-radius: 60px;
+    align-items: center;
+}
+
+.description-items-circle {
+    max-width: 97px;
+    height: 97px;
+    width: 100%;
+    background-color: $primary-blue;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-icons  {
+    font-size: 60px !important;
+    }
+
+
+.description-items-text {
+    flex: 1;
+    color: $primary-blue;
+    text-align: left;
+    margin-right: 50px;
+    margin-left: 20px;
+    
+    p {
+        flex: 1;
+        font-size: 12px;
+        margin-top: 8px;
+         }
+
+    h4 {
+        font-size: 14px !important;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .description { 
+
+        .description-items {
+            
+            height: 80px;
+            margin: 0;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .description-items-text {
+            margin-left: 10px;
+            margin-right: 20px; 
+
+            h4 {
+                
+                font-size: 12px !important;
+            }
+
+            p {
+                margin-top: 3px;
+                font-size: 10px;
+            }
+        }
+
+        .description-items-circle {
+            height: 80px;
+            width: 80px;
+            
+        }
+        .circle-icons  {
+            font-size: 40px !important;
+        }
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+
+    .description {
+        .description-items {
+            width: 360px; 
+            height: 70px;
+            margin-bottom: 40px;
+        }
+
+        .description-items-text {
+            margin-left: 10px;
+            margin-right: 30px; 
+
+            h4 {
+                
+                font-size: 12px !important;
+            }
+
+            p {
+                margin-top: 3px;
+                font-size: 10px;
+            }
+        }
+
+        .description-items-circle {
+            height: 70px;
+            width: 70px;
+            
+        }
+        .circle-icons  {
+            font-size: 40px !important;
+        }
+
+       }
+}

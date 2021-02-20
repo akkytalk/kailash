@@ -1,0 +1,211 @@
+@import "../../scssFiles/main.scss";
+@import "../Paste/Paste2.scss";
+
+
+@mixin margin-top-left-right {
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.link-page-add {
+    @include margin-top-left-right();
+    border: 1px solid black;
+    max-width: 1206px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.link-page-box {
+    @include margin-top-left-right();
+}
+
+
+.link-page-title {
+    @include title();
+}
+
+.link-page-title-item {
+    @include title-item();
+}
+
+::placeholder {
+    color: $primary-light-blue;
+    }
+
+
+.link-page-copy {
+   @include copy();
+}
+
+.link-page-icon-button {
+    padding: 7px 12px !important;
+}
+
+.link-page-box-input {
+  @include box-input();
+}
+
+.link-page-or {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.link-page-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+@mixin link-page-button {
+    width: 210px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.link-page-button-icon {
+    @include link-page-button();  
+    background-color: $primary-blue;
+    color: $primary-light-blue;
+    border-radius: 5px 5px 0 0;
+}
+
+.link-page-button-paste {
+    @include link-page-button();
+    background-color: $primary-light-blue;
+    color: $primary-blue;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.link-page-line {
+    padding: 3px;
+    width: 90%;
+    background-color: $primary-light-blue;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 767px)  { 
+    .link-page {
+        .link-page-add {
+            margin: 20px;
+            height: 70px;
+        }
+
+        .link-page-size {
+            @include size();
+        }
+
+        .link-page-copy {
+            @include copy-mobile();
+
+            .link-page-copy-span {
+                @include copy-span-mobile();
+              }
+
+            .link-page-copy-icon {
+             @include copy-icon-mobile(); 
+            }
+        }
+
+        .link-page-title-disabled {
+            @include title-mobile();
+        }
+
+        .link-page-box-input {
+            @include box-input-mobile();
+        }
+
+        @mixin link-page-position {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .link-page-or {
+            @include link-page-position();
+            top: 585px;
+            font-size: 24px;
+        }
+
+        .link-page-button {
+            @include link-page-position();
+            top: 650px;
+        }
+
+        @mixin link-page-button-mobile {
+            width: 140px;
+            height: 50px; 
+        }
+
+        .link-page-button-icon, .link-page-button-paste {
+            @include link-page-button-mobile();
+            font-size: 14px;
+        }
+
+        .link-page-line {
+            @include link-page-position();
+            top: 790px; 
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px ) {
+    .link-page {
+        .link-page-add {
+           height: 110px;
+           margin: 30px 50px;
+        }
+        
+         .link-page-box {
+             margin: 30px 50px;
+         }   
+
+        .link-page-icon-button {
+            padding: 5px 10px !important;
+        }
+        .link-page-title-item {
+            flex: 0.6;
+
+            input {
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .link-page-copy {
+            flex: 0.4;
+
+            span {
+                flex: 1;
+            }
+        }
+
+        .link-page-or {
+            font-size: 30px;
+        }
+
+        @mixin link-page-button-tablet {
+            width: 145px;
+            height: 60px; 
+        }
+
+        .link-page-button-icon, .link-page-button-paste {
+            @include link-page-button-tablet();
+            font-size: 20px;
+        }
+    }
+ }

@@ -1,0 +1,236 @@
+@import "../../scssFiles/main.scss";
+
+.setting-layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.setting-layout-items {
+  display: flex;
+  flex-flow: column;
+  flex: 0.25;
+  margin-right: 80px;
+
+  label {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: $primary-blue;
+    font-weight: 500;
+  }
+
+  
+
+  .MuiOutlinedInput-root { 
+    border-radius: 50px !important;
+}
+
+.MuiInputLabel-root {
+  font-size: 14px !important;
+  color: $primary-blue !important;
+  
+    } 
+}
+
+
+.setting-layout-items-inputs {
+  margin-bottom: 10px !important;
+}
+
+.setting-layout-items-button {
+  border-radius: 50px !important;
+  background-color: $primary-blue !important;
+  color: $background-color !important;
+}
+
+.setting-layout-items-span {
+  font-size: 10px;
+  margin-top: 5px;
+  text-align: center;
+  color: $primary-red;
+}
+
+.setting-line {
+  width: 90%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: $primary-blue;
+}
+
+.setting-mobile {
+  display: none;
+}
+
+.setting-mobile-up-icon {
+  display: none;
+}
+
+
+@media (max-width: 767px)  { 
+  .setting-layout {
+      display: none;
+      
+  }
+
+  .setting-mobile {
+    display: block;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+ .setting-mobile-icon {
+   color: $primary-light-blue !important;
+   
+ }
+
+ 
+
+ .setting-mobile-label {
+   color: $primary-blue;
+   font-weight: 600;
+   margin-bottom: 10px;
+ }
+
+  
+  
+  .setting-mobile-title-bar{
+    
+    background: $primary-blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+
+    label {
+      color: $primary-light-blue;
+      font-size: 13px;
+      margin-left: 15px;
+    }
+  }
+// .setting-mobile-button{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+    
+//     float:right;
+//     cursor:pointer;
+//     border: none;
+//   }
+  .setting-mobile-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    background: $background-color;
+
+    .MuiOutlinedInput-root { 
+      border-radius: 50px !important;
+    }
+    
+    .MuiInputLabel-root {
+    font-size: 14px !important;
+    color: $primary-blue !important;
+    padding-left: 10px !important;
+      } 
+    
+  }
+
+  .setting-mobile-window {
+    box-shadow: 0px 2.31209px 2.31209px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px;
+    
+  }
+
+  .setting-mobile-inputs {
+    margin-bottom: 12px !important;
+  }
+
+  .setting-mobile-button {
+    border-radius: 50px !important;
+    background-color: $primary-blue !important;
+    color: $primary-light-blue !important;
+    width: 100%;
+  }
+  
+  .setting-layout-items {
+    
+    flex: 1;
+    margin-right: 0 ;
+    margin-bottom: 20px;
+
+  }
+
+  .setting-line {
+    background-color: $primary-light-blue;
+    padding: 4px;
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .setting-mobile-box-item {
+    background-color: $primary-light-blue;
+    color: $primary-blue;
+    border-radius: 50px;
+    width: 100%;
+    height: 40px;
+
+  }
+
+  .setting-mobile-box-item {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .setting-mobile-box-item-label1 {
+    margin-left: 20px;
+    flex: 0.35;
+  }
+  .setting-mobile-box-item-label2 {
+    
+    flex: 0.1;
+    justify-content: flex-start;
+  }
+
+  .setting-mobile-box-item-label3 {
+    
+    flex: 0.7;
+  }
+
+  .setting-mobile-up-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  
+  .setting-layout {
+  margin-left: 40px;
+  }
+
+  .setting-layout-items {
+    flex: 0.4;
+    margin-right: 40px;
+  }
+}

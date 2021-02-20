@@ -1,0 +1,29 @@
+@import "../../../scssFiles/main.scss";
+
+.draw-toggle-button {
+    
+    width: 30px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px 0;
+
+    div {
+        width: 90%;
+        height: 3px;
+        margin: 3px;
+        background-color: $primary-light-blue;
+        
+    }
+}
+
+
+@media (min-width: 768px) {
+    .draw-toggle-button {
+        display: none;
+    }
+}
